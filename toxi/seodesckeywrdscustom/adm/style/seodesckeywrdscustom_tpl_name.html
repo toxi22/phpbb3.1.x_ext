@@ -1,0 +1,49 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_SEODESCKEYWRDSCUSTOM_NAME}</h1>
+<p>{L_SEODESCKEYWRDSCUSTOM_EXPLAIN}</p>
+
+<form id="sitelogo" method="post" action="{U_ACTION}">
+
+	<fieldset>
+		<legend>{L_SEODESCKEYWRDSCUSTOM_OPTIONS}</legend>
+
+		<dl>
+			<dt><label for="use_seodesckeywrdscustom">{L_USE_SEODESCCUSTOM}{L_COLON}</label><br /><span>{L_USE_SEODESCCUSTOM_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="use_seodesckeywrdscustom" value="1" id="use_seodesckeywrdscustom"<!-- IF USE_SEODESCKEYWRDSCUSTOM --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="use_seodesckeywrdscustom" value="0" <!-- IF not USE_SEODESCKEYWRDSCUSTOM --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="seodesccustom">{L_SEODESCCUSTOM}{L_COLON}</label><br /><span>{L_SEODESCCUSTOM_EXPLAIN}</span></dt>
+			<dd><textarea name="seodesccustom" id="seodesccustom" rows="3" cols="50">{SEODESCCUSTOM}</textarea></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="seokeywrdscustom">{L_SEOKEYWRDSCUSTOM}{L_COLON}</label><br /><span>{L_SEOKEYWRDSCUSTOM_EXPLAIN}</span></dt>
+			<dd><textarea name="seokeywrdscustom" id="seokeywrdscustom" rows="3" cols="50">{SEOKEYWRDSCUSTOM}</textarea></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="seorightscustom">{L_SEORIGHTSCUSTOM}{L_COLON}</label><br /><span>{L_SEORIGHTSCUSTOM_EXPLAIN}</span></dt>
+			<dd><textarea name="seorightscustom" id="seorightscustom" rows="3" cols="50">{SEORIGHTSCUSTOM}</textarea></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="seogeneratorcustom">{L_SEOGENERATORCUSTOM}{L_COLON}</label><br /><span>{L_SEOGENERATORCUSTOM_EXPLAIN}</span></dt>
+			<dd><textarea name="seogeneratorcustom" id="seogeneratorcustom" rows="3" cols="50">{SEOGENERATORCUSTOM}</textarea></dd>
+		</dl>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_ACP_SUBMIT_CHANGES}</legend>
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		</p>
+		{S_FORM_TOKEN}
+	</fieldset>
+</form>
+
+<!-- INCLUDE overall_footer.html -->

@@ -1,0 +1,21 @@
+services:
+    toxi.seodesckeywrdscustom.listener:
+        class: toxi\seodesckeywrdscustom\event\listener
+        arguments:
+            - @config
+            - @template
+            - @user
+            - @service_container
+            - %core.root_path%
+        tags:
+            - { name: event.listener }
+
+    toxi.seodesckeywrdscustom.admin.controller:
+        class: toxi\seodesckeywrdscustom\controller\admin_controller
+        arguments:
+            - @config
+            - @request
+            - @template
+            - @user
+            - @log
+            - @service_container

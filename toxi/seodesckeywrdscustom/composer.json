@@ -1,0 +1,27 @@
+{
+    "name": "toxi/seodesckeywrdscustom",
+    "type": "phpbb-extension",
+    "description": "Custom meta tags Description, Keywords, Rights, Generator",
+    "homepage": "http://phpbbguru.net",
+    "version": "1.0.0",
+    "time": "2016-05-07",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Roman Pavlovsky",
+            "email": "toxi@ua.fm",
+            "homepage": "http://serviceplus.in.ua",
+            "role": "Web-Developer, IT-manager"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "phpbb/phpbb": "3.1"
+    },
+    "extra": {
+        "display-name": "Custom meta tags Description, Keywords, Rights, Generator",
+        "soft-require": {
+            "phpbb/phpbb": "3.1.*@dev"
+        }
+    }
+}
